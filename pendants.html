@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Site</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!----------------------------------------------------------------- Top banner with rotating messages ---------------------------------------------------------------->
+    <div style="background-color: #FFD700;">
+        <div id="text">
+            Exciting Offers awating for You.....
+        </div>
+        <div id="price-display"></div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------- Header ------------------------------------------------------------------->
+    <div id="header">
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------- Carousel ------------------------------------------------------------------->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://www.giva.co/cdn/shop/files/40-_Magic_of_Tradition_hero_banner_-web-min.jpg?v=1727700210&width=3840" class="d-block w-100" alt="banner-1">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://www.giva.co/cdn/shop/files/Hero_Web-min_b6e4367e-6ca5-42a4-961a-c379cc4d3a5f.jpg?v=1728381861&width=2000" class="d-block w-100" alt="banner-2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.giva.co/cdn/shop/files/Personalised_-_Hero_Banner_Web_1_-min.jpg?v=1728957537&width=2000" class="d-block w-100" alt="banner-3">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.giva.co/cdn/shop/files/Hero_Web-min-1.jpg?v=1728381861&width=2000" class="d-block w-100" alt="banner-4">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.giva.co/cdn/shop/files/Hero_Web-min-1-2.jpg?v=1728381861&width=1780" class="d-block w-100" alt="banner-5">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <script>
+        //Messages
+        const messages = [
+            "Free Shipping on All Orders!",
+            "New Arrivals Available Now!",
+            "Shop the Latest Trends!",
+        ];
+
+        let curr = 0;
+
+        function rotateMessages() {
+            setInterval(function() {
+                curr = (curr + 1) % messages.length;
+                document.getElementById("text").innerHTML = messages[curr];
+            }, 3000);
+        }
+        //API Code 
+        async function fetchMetalRates() {
+            const url = 'https://api.metals.dev/v1/latest?api_key=#&currency=INR&unit=g';
+
+            try {
+                const response = await fetch(url, {
+                    headers: {
+                        'Accept': 'application/json',
+                    },
+                });
+                const result = await response.json();
+                console.log("Metal Rates Data:", result);  // Debugging log
+                return result;
+            } catch (error) {
+                console.error('Error fetching metal rates:', error);  // Log the error
+                document.getElementById("text").textContent = 'Error fetching prices: ' + error;
+            }
+        }
+
+        // Function to fetch and display metal prices
+        async function displayMetalPrices() {
+            let goldPrice, silverPrice, platinumPrice;
+
+            // Fetch metal rates data
+            const metalRates = await fetchMetalRates();
+
+            if (metalRates) {
+                // Extract prices for gold, silver, and platinum (assuming API response structure)
+                goldPrice = metalRates.rates.XAU;  // Example: Use appropriate field names from the response
+                silverPrice = metalRates.rates.XAG;
+                platinumPrice = metalRates.rates.XPT;
+
+                // Add dynamic prices to the messages array
+                document.getElementById("price-display").innerHTML = 
+            `Today: Gold 1g = <i class="bi bi-currency-rupee"></i> ${goldPrice} | ` +
+            `Silver 1g = <i class="bi bi-currency-rupee"></i> ${silverPrice} | ` +
+            `Platinum 1g = <i class="bi bi-currency-rupee"></i> ${platinumPrice}`;
+            }
+        }
+
+        // Initialize by calling the displayMetalPrices function
+        rotateMessages();
+        displayMetalPrices();
+
+        //Carousel effect
+        var myCarousel = document.getElementById('carouselExampleInterval');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000, // Set a default interval here
+        ride: 'carousel'
+        });
+    </script>
+</body>
+</html>

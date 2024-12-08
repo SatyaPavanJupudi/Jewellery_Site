@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Site</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!----------------------------------------------------------------- Top banner with rotating messages ---------------------------------------------------------------->
+    <div style="background-color: #FFD700;">
+        <div id="text">
+            Exciting Offers awating for You.....
+        </div>
+        <div id="price-display"></div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------- Header ------------------------------------------------------------------->
+    <div id="header">
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------- Carousel ------------------------------------------------------------------->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://www.giva.co/cdn/shop/files/40-_Magic_of_Tradition_hero_banner_-web-min.jpg?v=1727700210&width=3840" class="d-block w-100" alt="banner-1">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://www.giva.co/cdn/shop/files/Hero_Web-min_b6e4367e-6ca5-42a4-961a-c379cc4d3a5f.jpg?v=1728381861&width=2000" class="d-block w-100" alt="banner-2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.giva.co/cdn/shop/files/Personalised_-_Hero_Banner_Web_1_-min.jpg?v=1728957537&width=2000" class="d-block w-100" alt="banner-3">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.giva.co/cdn/shop/files/Hero_Web-min-1.jpg?v=1728381861&width=2000" class="d-block w-100" alt="banner-4">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.giva.co/cdn/shop/files/Hero_Web-min-1-2.jpg?v=1728381861&width=1780" class="d-block w-100" alt="banner-5">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--------------------------------------------------------------------------- Types of Ornaments ------------------------------------------------------------------>
+      <div class="mt-5" style="display: flex;">
+        <div>
+            <a href="pendants.html" class="link"><img class="float-img" src="https://www.giva.co/cdn/shop/collections/pink_necklaces_pend_copy.jpg?v=1730837273" alt="image-1"/></a>
+            <p class="float-content">Pendants</p>
+        </div>
+        <div>
+            <img class="float-img" src="https://www.giva.co/cdn/shop/collections/pink_rings_c356f6b3-6547-4e39-9b08-dfdf5ecfc2b0.jpg?v=1730837212" alt="image-2"/>
+            <p class="float-content">Rings</p>
+        </div>
+        <div>
+            <img class="float-img" src="https://www.giva.co/cdn/shop/collections/earrings_pink-min.png?v=1730837225" alt="image-3"/>
+            <p class="float-content">Earrings</p>
+        </div>
+        <div>
+            <img class="float-img" src="https://www.giva.co/cdn/shop/collections/earrings_pink-min.png?v=1730837225" alt="image-4"/>
+            <p class="float-content">Bracelets</p>
+        </div>
+        <div>
+            <img class="float-img" src="https://www.giva.co/cdn/shop/collections/sets_pink.webp?v=1730837245" alt="image-5"/>
+            <p class="float-content">Sets</p>
+        </div>
+        <div>
+            <img class="float-img" src="https://www.giva.co/cdn/shop/collections/anklets_f99dfe60-fc81-457a-ab33-721352c6e672.jpg?v=1730837132" alt="image-6"/>
+            <p class="float-content">Anklets</p>
+        </div>
+        <div>
+            <img class="float-img" src="https://www.giva.co/cdn/shop/collections/Personaloised_250_x_250-min.png?v=1730837251" alt="image-7"/>
+            <p class="float-content">Personalised</p>
+        </div>
+        <div>
+            <img class="float-img" src="https://www.giva.co/cdn/shop/collections/Frame_2609057-min.jpg?v=1730837121" alt="image-8"/>
+            <p class="float-content">Men's</p>
+        </div>
+        <div>
+            <img class="float-img" src="https://www.giva.co/cdn/shop/collections/Mangalsutras_3.jpg?v=1730837074" alt="image-9"/>
+            <p class="float-content">Mangalsutras</p>
+        </div>
+      </div>
+
+      <!------------------------------------------------------------------------------------- Essentials ------------------------------------------------------------------->
+      <p class="mt-5 float-content-1">Essentials</p>
+      <div style="display: flex;margin-left: 250px;">
+        <div>
+            <img style="width: 500px;margin-right: 5px;" src="https://www.giva.co/cdn/shop/files/Gold_17_-min_7372593d-8ddb-4b2e-a0b3-4c9d8bb91aae.jpg?v=1730648033&width=1500" alt="essential-1"/>
+        </div>
+        <div>
+            <img style="width: 500px;margin-left: 15px;" src="https://www.giva.co/cdn/shop/files/Silver_17_-min_510df847-33e2-4319-914d-ef118aaa2681.jpg?v=1730648033&width=1500" alt="essential-2"/>
+        </div>
+      </div>
+
+      <!---------------------------------------------------------------------------------------- Gifts ------------------------------------------------------------------->
+      <p class="mt-5 float-content-1">Gift For Your Recipient</p>
+      <div style="display: flex;margin-left: 250px;">
+        <div>
+            <img style="width: 500px;margin-right: 5px;" src="https://www.giva.co/cdn/shop/files/Him_1_-min_ac277476-2d9e-4b01-bb41-6fc7daa29a44.jpg?v=1728300653&width=1500" alt="gift-1"/>
+        </div>
+        <div>
+            <img style="width: 500px;margin-left: 15px;" src="https://www.giva.co/cdn/shop/files/Her_1_-min_23a6de8f-731f-4c59-9ce9-a490741eabf3.jpg?v=1728300653&width=1500" alt="gift-2"/>
+        </div>
+      </div>
+
+      <!------------------------------------------------------------------------------------- Recommendations --------------------------------------------------------------->
+      <p class="mt-5 float-content-1">Recommendations</p>
+      <div>
+        <img style="width: 100%;" src="https://www.giva.co/cdn/shop/files/Necklaces_Pendants_-_Collection_Banner_Web-min_c6ca4104-8704-450c-b4ab-4bff3ad411ca.jpg?v=1729076095&width=1780" alt="non-banner-1"/>
+      </div>
+      <div style="margin-top: 15px;">
+        <img style="width: 100%;" src="https://www.giva.co/cdn/shop/files/Artboard_1_copy_1_-min.jpg?v=1731042828&width=2000" alt="non-banner-2" />
+      </div>
+      <div style="margin-top: 25px; display: flex;">
+        <div>
+            <img style="width: 745px;margin-left: 10px;" src="https://www.giva.co/cdn/shop/files/Group_2609659.jpg?v=1730809607&width=1500" alt="non-banner-3" />
+        </div>
+        <div>
+            <img style="width: 745px;margin-left: 10px;" src="https://www.giva.co/cdn/shop/files/Group_2609658.jpg?v=1730809606&width=1500" alt="non-banner-4">
+        </div>
+      </div>
+
+      <!---------------------------------------------------------------------------------- Wedding Gifts ------------------------------------------------------------------->
+      <p class="mt-5 float-content-1">Wedding Gifts</p>
+      <div class="container">
+        <div class="row justify-content-center">
+                <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                    <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Personalised_Gifts-min_2f91feb8-a5a3-4b44-8b5c-ead52ceaf959.jpg?v=1730722821&width=400" alt="wedding-1" />
+                </div>
+                <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                    <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Couple_Rings-min_91d0383f-422f-449f-9777-48e1ba0ec359.jpg?v=1730722821&width=400" alt="wedding-2">
+                </div>
+                <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                    <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Gold_Gifts-min_74e3610e-aaf4-4271-97ef-3ede8fe9ea8f.jpg?v=1730722821&width=400" alt="wedding-3">
+                </div>
+                <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                    <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Silver_Gifts-min_7c99882d-5abe-40d0-856b-d5a21342aeaa.jpg?v=1730722821&width=400" alt="wedding-4">
+                </div>
+        </div>
+      </div>
+
+      <!----------------------------------------------------------------------------------- Get ready for ------------------------------------------------------------------>
+      <p class="mt-5 float-content-1">Get Ready For</p>
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Copy_of_Mehendi-min.png?v=1730722827&width=1500" alt="ready-1" />
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Copy_of_Haldi-min.png?v=1730722827&width=1500" alt="ready-2">
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Copy_of_Shaadi-min.png?v=1730722827&width=1500" alt="ready-3">
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Copy_of_Sangeet-min.png?v=1730722827&width=1500" alt="ready-4">
+            </div>
+        </div> 
+      </div>
+
+      <!------------------------------------------------------------------------------ Gifts for Soulmate ------------------------------------------------------------------->
+      <p class="mt-5 float-content-1">Gifts for your Soulmate</p>
+      <div style="margin-top: 15px; display: flex;">
+        <div>
+            <img style="width: 600px;margin-left: 150px;" src="https://www.giva.co/cdn/shop/files/Him-min_fa0c8085-e4fc-41a0-8c1f-584324d6716b.jpg?v=1730722821&width=1500" alt="soulmate-1" />
+        </div>
+        <div>
+            <img style="width: 600px;margin-left: 25px;" src="https://www.giva.co/cdn/shop/files/Her-min_b5e29bd0-4214-4881-8076-3c97b53c3d10.jpg?v=1730722821&width=1500" alt="soulmate-2">
+        </div>
+      </div>
+      <div style="margin-top: 15px;display: flex;gap: 0;">
+            <img style="width: 50%;height: auto;" src="https://www.giva.co/cdn/shop/files/999_2_-min.jpg?v=1728653217&width=1500" alt="shop-1" />
+            <img style="width: 50%;height: auto;" src="https://www.giva.co/cdn/shop/files/2999_2_-min_7616deaa-43fa-4f4e-a263-7cc5f16325c1.jpg?v=1728653217&width=1500" alt="shop-2">
+      </div>
+      <div style="display: flex;gap: 0;">
+        <img style="width: 50%;height: auto;" src="https://www.giva.co/cdn/shop/files/4999_1_-min_8fa5953a-e733-4b08-98aa-4ed354eb50f7.jpg?v=1728653217&width=1500" alt="shop-3" />
+        <img style="width: 50%;height: auto;" src="https://www.giva.co/cdn/shop/files/Premium_1_-min_e429a5b3-d8c7-4a8c-8383-e94560b72a86.jpg?v=1728653217&width=1500" alt="shop-4">
+    </div>
+
+    <!------------------------------------------------------------------------------- Get Ready with GIVA ---------------------------------------------------------------->
+    <p class="mt-5 float-content-1">Get Ready with GIVA</p>
+    <div style="margin-left: 350px;margin-right: 0px !important;">
+        <div style="margin-top: 15px;display: flex;gap: 0;">
+            <img style="width: 35%;height: auto;" src="https://www.giva.co/cdn/shop/files/Earrings-min_c53d1cf1-9f9d-4293-ab88-e04079181692.jpg?v=1729151124&width=1500" alt="giva-1" />
+            <img style="width: 35%;height: auto;" src="https://www.giva.co/cdn/shop/files/Men_s_Chains-min_f4c9d0b7-698a-4f27-a894-d6e9627ae256.jpg?v=1729151124&width=1500" alt="giva-2" />
+        </div>
+        <div style="display: flex;gap: 0;">
+            <img style="width: 35%;height: auto;text-align: center;" src="https://www.giva.co/cdn/shop/files/Sets-min_75242f08-5600-4fcb-9f31-9788a9edb61f.jpg?v=1729151125&width=1500" alt="giva-3" />
+            <img style="width: 35%;height: auto;text-align: center;" src="https://www.giva.co/cdn/shop/files/Men_s_Bracelets-min_0a2f893d-bd09-44ac-bee3-5d5d338f2098.jpg?v=1729151124&width=1500" alt="giva-4" />
+        </div>
+        <div style="display: flex;gap: 0;">
+            <img style="width: 35%;height: auto;text-align: center;" src="https://www.giva.co/cdn/shop/files/Rings-min_0ae02296-f0e7-44be-baa6-6ee4093e7b8a.jpg?v=1729151125&width=1500" alt="giva-5" />
+            <img style="width: 35%;height: auto;text-align: center;" src="https://www.giva.co/cdn/shop/files/Men_s_Rings.jpg?v=1728993825&width=1500" alt="giva-6" />
+        </div>
+        <div style="display: flex;gap: 0;">
+            <img style="width: 35%;height: auto;text-align: center;" src="https://www.giva.co/cdn/shop/files/Anklets-min_96572550-91d8-4681-a714-894a0b86f0de.jpg?v=1729151124&width=1500" alt="giva-7" />
+            <img style="width: 35%;height: auto;text-align: center;" src="https://www.giva.co/cdn/shop/files/Toe_Rings-min_3da4d12f-d974-43c3-a344-c531aec1598e.jpg?v=1729151124&width=1500" alt="giva-8" />
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------- Most Gifted --------------------------------------------------------------------->
+    <p class="mt-5 float-content-1">Most Gifted</p>
+    <div>
+        <div style="display: flex;">
+            <img style="width: 400px;margin-left: 150px;margin-top: 10px;margin-bottom: 10px;margin-right: 10px;" src="https://www.giva.co/cdn/shop/files/Mom-min_ea7c401b-b8c3-4acd-8c4a-87c50f7e895d.jpg?v=1728300653&width=1500" alt="most-1" />
+            <img style="width: 400px;margin: 10px;" src="https://www.giva.co/cdn/shop/files/Brother_1_-min_00bb5db4-bd0b-428c-972d-61c082c3e2e3.jpg?v=1728300653&width=1500" alt="most-2" />
+            <img style="width: 400px;margin: 10px;" src="https://www.giva.co/cdn/shop/files/SISTER_1_-min_9c3d363f-4d45-4063-989c-540ffd0c59f4.jpg?v=1728300652&width=1500" alt="most-3" />
+        </div>
+        <div style="display: flex;">
+            <img style="width: 400px;margin-left: 150px;margin-top: 10px;margin-bottom: 10px;margin-right: 10px;" src="https://www.giva.co/cdn/shop/files/Wife_1_-min_4c1f1d39-d00d-44e2-9bed-f5f02fd193b0.jpg?v=1728300653&width=1500" alt="most-4" />
+            <img style="width: 400px;margin: 10px;" src="https://www.giva.co/cdn/shop/files/Husband_1_-min_c6bbed54-7b47-422b-af4e-089c57b9894a.jpg?v=1728300653&width=1500" alt="most-5" />
+            <img style="width: 400px;margin: 10px;" src="https://www.giva.co/cdn/shop/files/Friends_1_-min_e4606561-9b29-4484-8343-a842c34536e5.jpg?v=1728300653&width=1500" alt="most-6" />
+        </div>
+    </div>
+    <img style="margin-top: 15px;width: 100%;" src="https://www.giva.co/cdn/shop/files/Gold_desktop-min_b7e502b6-84cc-4a04-861b-b188790197c1.jpg?v=1730697097&width=1500" alt="non-banner-5" />
+    <div class="mt-15">
+        <img class="col-2 m-4" src="https://www.giva.co/cdn/shop/collections/1-min.png?v=1714027259" alt="item-1"/>
+        <img class="col-2 m-4" src="https://www.giva.co/cdn/shop/collections/2-min.png?v=1714027310" alt="item-2"/>
+        <img class="col-2 m-4" src="https://www.giva.co/cdn/shop/collections/6-min.png?v=1714027360" alt="item-3"/>
+        <img class="col-2 m-4" src="https://www.giva.co/cdn/shop/collections/3-min.png?v=1714166276" alt="item-4"/>
+        <img class="col-2 ml-4 mt-4 mb-4" src="https://www.giva.co/cdn/shop/collections/Frame_2611018-min.png?v=1717158417" alt="item-5"/>
+    </div>
+    <div style="margin-top: 25px; display: flex;gap: 10px;justify-content: center;">
+        <img style="width: 45%;" src="https://www.giva.co/cdn/shop/files/EnCAPTIVATING_SOLITAIRES-min.jpg?v=1727677198&width=1500" alt="card-1" />
+        <img style="width: 45%;" src="https://www.giva.co/cdn/shop/files/Everyday_Elegance-min_e53322fe-6cb1-46e9-8ac3-215a262363a0.jpg?v=1727458119&width=1500" alt="card-2" />
+    </div>
+    <div style="margin-top: 5px; display: flex;gap: 10px;justify-content: center;">
+        <img style="width: 45%;" src="https://www.giva.co/cdn/shop/files/gagement_Rings.-min.jpg?v=1727677198&width=1500" alt="card-3" />
+        <img style="width: 45%;" src="https://www.giva.co/cdn/shop/files/Gifts_Under_15k-min_e5b352f1-ac47-492e-9240-153b91cd574b.jpg?v=1727423867&width=1500" alt="card-4" />
+    </div>
+
+    <!--------------------------------------------------------------------------------- Essentials for You -------------------------------------------------------------->
+    <p class="mt-5 float-content-1">Essentials For You</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Birthday_1_-min_742177db-2b0c-471c-ab94-346c6b3cd00d.jpg?v=1728300653&width=400" alt="essential-3" />
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Diwali_1_-min.jpg?v=1728300653&width=400" alt="essential-4" />
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Anniversary_1_-min_638bcfb8-72a8-46b6-8dec-294df82d84bc.jpg?v=1728300653&width=400" alt="essential-5" />
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Most_Gifted_1_-min_39e86c1d-f098-4cae-87a2-6522b3de8d70.jpg?v=1728300652&width=400" alt="essential-6" />
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------------- Shop By Color --------------------------------------------------------------------->
+    <p class="mt-5 float-content-1">Shop By Colour</p>   
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Rose_Gold-min_c6ed6c5b-b773-4fc9-be8c-b2c4f1a77d4a.jpg?v=1728371812&width=400" alt="essential-3" />
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Oxidised-min_498555a1-b2ae-45f6-84ed-87ff111cb50c.jpg?v=1728371812&width=400" alt="essential-4" />
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Silver_min_diwali.jpg?v=1728371875&width=400" alt="essential-5" />
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center mb-3">
+                <img class="img-fluid" src="https://www.giva.co/cdn/shop/files/Gold_PLated-min_2f864671-d6e6-4aec-810f-deed2b977b52.jpg?v=1728371812&width=400" alt="essential-6" />
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 25px; display: flex;gap: 10px;justify-content: center;">
+        <img style="width: 45%;" src="https://www.giva.co/cdn/shop/files/Wedding_1_-min_f940613a-858e-42d7-a435-20d8fc21c28e.jpg?v=1728653460&width=1000" alt="card-5" />
+        <img style="width: 45%;" src="https://www.giva.co/cdn/shop/files/Everyday_1_-min_3d06388e-e66c-458f-932f-bf8ba5d372b5.jpg?v=1728653460&width=1000" alt="card-6" />
+    </div>  
+    <div style="margin-top: 15px; display: flex;gap: 10px;justify-content: center;">
+        <img style="width: 45%;" src="https://www.giva.co/cdn/shop/files/Office_1_-min_ec9b193f-edaa-40dc-8adb-7b856a186747.jpg?v=1728653460&width=1000" alt="card-7" />
+        <img style="width: 45%;" src="https://www.giva.co/cdn/shop/files/desktop_party_wear_1_-min.jpg?v=1730728682&width=1000" alt="card-8" />
+    </div>
+
+    <!---------------------------------------------------------------------------------------- Footer ------------------------------------------------------------------->
+    <div style="margin-top: 35px; background-color: #FFD700;height: 40px;">
+        <div style="text-align: center;padding: 5px;color: #b1040e;font-weight: bold;">
+            Exciting Offers are awating for You.....
+        </div>
+    </div>
+    <div class="container" style="background-image: url('https://www.giva.co/cdn/shop/files/lines.png?v=1709731978&width=1946');">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+              </div>
+      
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+      
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+              </div>
+      
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    <!----------------------------------------------------------------------------------- Script codes ------------------------------------------------------------------->
+    <script>
+        //Messages
+        const messages = [
+            "Free Shipping on All Orders!",
+            "New Arrivals Available Now!",
+            "Shop the Latest Trends!",
+        ];
+
+        let curr = 0;
+
+        function rotateMessages() {
+            setInterval(function() {
+                curr = (curr + 1) % messages.length;
+                document.getElementById("text").innerHTML = messages[curr];
+            }, 3000);
+        }
+        //API Code 
+        async function fetchMetalRates() {
+            const url = 'https://api.metals.dev/v1/latest?api_key=#&currency=INR&unit=g';
+
+            try {
+                const response = await fetch(url, {
+                    headers: {
+                        'Accept': 'application/json',
+                    },
+                });
+                const result = await response.json();
+                console.log("Metal Rates Data:", result);  // Debugging log
+                return result;
+            } catch (error) {
+                console.error('Error fetching metal rates:', error);  // Log the error
+                document.getElementById("text").textContent = 'Error fetching prices: ' + error;
+            }
+        }
+
+        // Function to fetch and display metal prices
+        async function displayMetalPrices() {
+            let goldPrice, silverPrice, platinumPrice;
+
+            // Fetch metal rates data
+            const metalRates = await fetchMetalRates();
+
+            if (metalRates) {
+                // Extract prices for gold, silver, and platinum (assuming API response structure)
+                goldPrice = metalRates.rates.XAU;  // Example: Use appropriate field names from the response
+                silverPrice = metalRates.rates.XAG;
+                platinumPrice = metalRates.rates.XPT;
+
+                // Add dynamic prices to the messages array
+                document.getElementById("price-display").innerHTML = 
+            `Today: Gold 1g = <i class="bi bi-currency-rupee"></i> ${goldPrice} | ` +
+            `Silver 1g = <i class="bi bi-currency-rupee"></i> ${silverPrice} | ` +
+            `Platinum 1g = <i class="bi bi-currency-rupee"></i> ${platinumPrice}`;
+            }
+        }
+
+        // Initialize by calling the displayMetalPrices function
+        rotateMessages();
+        displayMetalPrices();
+
+        //Carousel effect
+        var myCarousel = document.getElementById('carouselExampleInterval');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000, // Set a default interval here
+        ride: 'carousel'
+        });
+    </script>
+</body>
+</html>

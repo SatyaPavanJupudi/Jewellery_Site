@@ -1,0 +1,35 @@
+#text{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #b1040e;
+    font-family: "Work Sans", sans-serif;
+}
+
+#header{
+    height:150px;
+}
+
+.float-img{
+    width: 160px;
+    margin: 2px;
+    height:160px;
+}
+.float-content{
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+}
+
+.float-content-1{
+    font-weight: bold;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+}
+.link{
+    text-decoration: none;
+}
